@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: rgb(175, 175, 175);
+    width: 100%;
+
+}
+
+header nav ul {
+    list-style: none;
+    width: 70%;
+    min-width: 650px;
+    background-color: rgb(175, 175, 175);
+    margin: 0 auto;
+}
+
+header .logo {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    line-height: 15px;
+    font-weight: bold;
+    transform: rotate(340deg);
+    font-size: 30px;
+    position: relative;
+
+}
+
+header .logo a:hover {
+    background: none;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav ul a {
+    display: inline-block;
+    padding: 20px;
+}
+
+header nav a:hover {
+    background-color: rgb(138, 138, 138);
+    color: white;
+}
+
+/* Pesquisa */
+
+.pesquisa .login a:hover {
+    background: none;
+    color: rgb(160, 160, 160);
+
+}
+
+header nav li.login {
+    background-color: white;
+    margin-right: 4px;
+    border-radius: 15px;
+    margin-top: 13px;
+    padding: 3px 15px;
+}
+
+.pesquisa {
+    float: right;
+}
+
+.pesquisa li img {
+    width: 20px;
+}
+
+input {
+    background-image: url("https://cdn.pixabay.com/photo/2021/10/11/00/59/search-6699087_960_720.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    padding: 4px;
+    border: none;
+    width: 30px;
+    border-radius: 10px;
+}
+
+input:hover {
+    width: 150px;
+    background-position: center left;
+    padding-left: 20px;
+}
+
+/* Melhorar: Clicar e manter ativo, até CLICAR fora*/
+
+
+/* Seção / conteúdo */
+/*
+section {
+    clear: both;
+    background-color: rgba(160, 160, 160, 0.747);
+    background-image: url("https://wallpaperaccess.com/full/7841457.jpg");
+    box-shadow: inset 650px 0px 200px 200px rgba(160, 160, 160, 0.747);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .conteudo {
+    height: 400px;
+    width: 70%;
+    min-width: 650px;
+    margin: 0 auto;
+}
+
+section .slide {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://wallpaperaccess.com/full/7841457.jpg");
+    -moz-box-shadow: inset 10px 10px 50px #fff;
+    -webkit-box-shadow: inset 20px 20px 50px #fff;
+    box-shadow: inset 1px 10px 50px #fff;
+}
+*/
+
+
+/* Slideshow container */
+.slideshow-container {
+  min-width: 650px;
+  width: 70%;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+img {
+    height: 400px;
+    width: 100%;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition:  0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
